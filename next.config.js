@@ -7,6 +7,7 @@ const nextConfig = {
   experimental: { esmExternals: false, webpackBuildWorker: true },
   reactStrictMode: true,
   images: {
+    domains:['paginaqu1ck.netlify.app'],
     remotePatterns: [
       {
         protocol: 'https',

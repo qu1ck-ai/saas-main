@@ -4,7 +4,7 @@ import env from './env';
 const app = {
   version: packageInfo.version,
   name: 'BoxyHQ',
-  logoUrl: 'https://boxyhq.com/img/logo.png',
+  logoUrl: 'https://paginaqu1ck.netlify.app/assets/logo.png',
   url: env.appUrl,
 };
 
