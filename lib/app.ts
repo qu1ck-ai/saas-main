@@ -3,7 +3,7 @@ import env from './env';
 
 const app = {
   version: packageInfo.version,
-  name: 'BoxyHQ',
+  name: 'Qu1ck',
   logoUrl: 'https://paginaqu1ck.netlify.app/assets/logo.png',
   url: env.appUrl,
 };

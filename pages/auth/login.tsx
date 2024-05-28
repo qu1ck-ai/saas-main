@@ -111,6 +111,8 @@ const Login: NextPageWithLayout<
 
   const params = token ? `?token=${token}` : '';
 
+  
+
   return (
     <>
       <Head>
@@ -150,11 +152,11 @@ const Login: NextPageWithLayout<
                   value={formik.values.password}
                   label={
                     <label className="label">
-                      <span className="label-text">{t('password')}</span>
+                      <span className="label-text">{t('Senha')}</span>
                       <span className="label-text-alt">
                         <Link
                           href="/auth/forgot-password"
-                          className="text-sm text-primary hover:text-[color-mix(in_oklab,oklch(var(--p)),black_7%)]"
+                          className="text-sm text-red-500 hover:text-[color-mix(in_oklab,oklch(var(--p)),black_7%)]"
                         >
                           {t('forgot-password')}
                         </Link>
@@ -180,13 +182,13 @@ const Login: NextPageWithLayout<
             <div className="mt-3 space-y-3">
               <Button
                 type="submit"
-                color="primary"
+                color='error'
                 loading={formik.isSubmitting}
                 active={formik.dirty}
                 fullWidth
                 size="md"
               >
-                {t('sign-in')}
+                {t('Acessar')}
               </Button>
               <AgreeMessage text={t('sign-in')} />
             </div>
@@ -218,7 +220,7 @@ const Login: NextPageWithLayout<
         {t('dont-have-an-account')}
         <Link
           href={`/auth/join${params}`}
-          className="font-medium text-primary hover:text-[color-mix(in_oklab,oklch(var(--p)),black_7%)]"
+          className="font-medium text-red-500 hover:text-black"
         >
           &nbsp;{t('create-a-free-account')}
         </Link>
